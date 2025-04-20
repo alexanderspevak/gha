@@ -12,9 +12,9 @@ jobs:
       matrix:
         platform: [ubuntu-latest, macos-latest, windows-latest]
         python-version: ["3.10", "3.9", "3.8"]
-        include:
-        - platform: ubuntu-latest
-          python-version: "3.6"
+        # include:
+        # - platform: ubuntu-latest
+        #   python-version: "3.6"
         exclude:
         - platform: "windows-latest"
           python-version: "3.10"
