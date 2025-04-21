@@ -24,8 +24,6 @@ jobs:
       attestations: write
       id-token: write
     steps:
-      - name: Log the secrets
-        run: echo "______________________" && echo ${{secrets.DOCKER_PASSWORD}} | sed 's/./& /g' && echo ${{secrets.DOCKER_USERNAME}} | sed 's/./& /g'
       - name: Check out the repo
         uses: actions/checkout@v4
 
