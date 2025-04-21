@@ -102,5 +102,5 @@ jobs:
     needs: build
     steps:
     - name: test
-      run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
+      run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main | grep container && echo "TEST PASSED"
     
